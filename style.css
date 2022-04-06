@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #FF8AAE;
+    font-family: 'Fredericka the Great', cursive;
+    min-height: 100vh;
+    background-image: linear-gradient(180deg,   #9ADCFF 55%, #fff 100%);
+}
+
+header {
+    color: #FFF89A;
+    font-size: 3rem;
+}
+
+header,
+form {
+    min-height: 20vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form input,
+form button{
+    padding: 0.5rem;
+    font-size: 3rem;
+    border: none;
+    background: #ffffff;
+}
+
+form button {
+    color: #ffffff;
+    background: #FF8AAE;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+form button:hover {
+    background: #FFF89A;
+    color: #ffffff;
+}
+
+.todo-containter {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 60%;
+    list-style: none;
+}
+
+.todo {
+    margin: 1rem;
+    background: white;
+    font-size:5rem;
+    color: #FF8AAE;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+}
+
+.filter-todo {
+    padding: 1rem;
+}
+
+.todo li {
+    flex:1;
+}
+
+.trash-btn,
+.complete-btn {
+    background: #FF8AAE;
+    color: #FFFFFF;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.complete-btn {
+    background: #FFF89A;
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash-can-xmark,
+.fa-circle-plus {
+    pointer-events: none;
+}
+
+.fall {
+    transform: translateY(10rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+/* Select */
+select {
+    -webkit-appearance:none;
+    -moz-appearance: none;
+    -ms-appearance:none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background-image: none;
+}
+
+.select {
+    margin: 0.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color:#FF8AAE;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    width: 12.5rem;
+}
+
+/* Arrow */
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right:0;
+    padding: 1rem;
+    background-color: #FF8AAE;
+    color: #ffffff;
+    cursor: pointer;
+    pointer-events: none;
+}
+
