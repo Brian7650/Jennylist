@@ -93,8 +93,8 @@ form button:hover {
     padding: 0rem 0.5rem;
 }
 
-.fa-trash-can,
-.fa-check {
+.fa-circle-check,
+.fa-circle-minus {
     pointer-events: none;
 }
 
